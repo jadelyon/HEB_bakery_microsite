@@ -197,3 +197,28 @@ h1, h2, h3, h4, h5, h6{
       margin-right: 0!important;
       margin-left: auto;
    }
+
+/* Bakery categories navigation */
+
+.bakeryNav {
+    text-align: center;
+}
+.bakeryNav img {
+    border: 3px solid #ff0000;
+    border-radius: 50%;
+    width: 125px;
+    padding: 15px;
+}
+.bakeryNav h2 {
+    font-family: 'Lora', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 50px;
+    padding-bottom: 25px;
+}
+.bakeryNav h4 {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+}
+
+ .bakeryNav .row {
+     padding-bottom: 50px;
+}
