@@ -2,48 +2,56 @@
 
 p { 
     font-family: 'Jura', sans-serif;
-  }
-  .customNav {
+}
+
+.customNav {
     position: fixed;
     width: 100%;
     background-size: cover;
     z-index: 10;
-  }
-  .navbar-nav{
+}
+
+.navbar-nav{
     margin-left: auto;
-  }
-  .navbar-brand img{
+}
+
+.navbar-brand img{
     padding-right: 15px;
     width: 65px;
-  }
-  .nav-item{
+}
+
+.nav-item{
     margin: 0px 15px;
-  }
-  .customNav a {
-      color: black!important;
-    }
-  .active-cyan-2 input[type=text]:focus:not([readonly]) {
+}
+
+.customNav a {
+    color: black!important;
+}
+.active-cyan-2 input[type=text]:focus:not([readonly]) {
     border-bottom: 1px solid #4dd0e1;
     box-shadow: 0 1px 0 0 #4dd0e1;
     margin-left: auto;
-  }
-  .active-cyan .fa, .active-cyan-2 .fa {
+}
+
+.active-cyan .fa, .active-cyan-2 .fa {
     color: #4dd0e1;
-  }
-  #nav-list{
+}
+
+#nav-list{
     margin-right: 0 !important;
-  }
-  .form-inline{
-  margin-right: 0!important;
-  margin-left: auto;
-  }
-  
-  /* footer navigation */
+}
+
+.form-inline{
+    margin-right: 0!important;
+    margin-left: auto;
+}
+
+/* footer navigation */
 
 
-  /* hero image sections */
+/* hero image sections */
 
-  .jumbotron{
+.jumbotron{
     background-image: url('../images/bakery-hero.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -52,17 +60,17 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  .jumboCopy{
+}
+.jumboCopy{
     width: 70%;
     min-width: 500px;
     max-width: 700px;
     color: white;
     text-align: center;
-  }
-  .content{
+}
+.content{
     padding:50px;
-  }
+}
 
 
 /* bakery categories navigation */
@@ -70,54 +78,53 @@ p {
 
 h1, h2, h3, h4, h5, h6{
     font-family: 'Anton', sans-serif;
-  }
+}
   
-  p { 
+p { 
     font-family: 'Jura', sans-serif;
-  }
-  
-  .customNav {
+}
+
+.customNav {
     position: fixed;
     width: 100%;
     background-size: cover;
     z-index: 10;
-  }
-  
-  .navbar-nav{
-    margin-left: auto;
+}
 
-  }
-  
-  .navbar-brand img{
+.navbar-nav{
+    margin-left: auto;
+}
+
+.navbar-brand img{
     padding-right: 15px;
     width: 65px;
-  }
-  
-  .nav-item{
+}
+
+.nav-item{
     margin: 0px 15px;
-  }
-  
-  .dropdown-menu{
+}
+
+.dropdown-menu{
     background: url('../images/transparency.png');
     background-color: transparent !important;
     background-size: cover;
-  }
-  
-  .dropdown-item:focus, .dropdown-item:hover {
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
     color: black;
     text-decoration: none;
     background: black;
-    }
-  
-  .customNav a {
-      color: black!important;
-    }
-  
-  .navCTA{
-      font-size: 15px;
-    }
-  
-  .jumbotron{
+}
+
+.customNav a {
+    color: black!important;
+}
+
+.navCTA{
+    font-size: 15px;
+}
+
+.jumbotron{
     background-image: url('../images/bakery-hero.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -126,77 +133,86 @@ h1, h2, h3, h4, h5, h6{
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  
-  .jumboCopy{
+}
+
+.jumboCopy{
     width: 70%;
     min-width: 500px;
     max-width: 700px;
     color: white;
     text-align: center;
-  }
-  .content{
+}
+.content{
     padding:50px;
-  }
-  
-  .sectionHeading{
+}
+
+.sectionHeading{
     text-align: center;
-  }
-  
-  .showsNear{
+}
+
+.showsNear{
     padding: 0px 30px 30px 30px;
-  }
-  footer {
+}
+
+footer {
     position: absolute;
     width: 100%;
     height: 60px;
     line-height: 60px;
     background-color: #f5f5f5;
     margin-top: 50px;
-  } 
-  .cardContainer {
+} 
+
+.cardContainer {
     margin-top: 20px;
-  }
-  .card {
+}
+
+.card {
     margin: 0 auto;
-  }
-  
-  .valueProp{
+}
+
+.valueProp{
     margin-top: 15px;
     margin-bottom: 15px;
-  
-  }
-  
-  .sideAccent{
+}
+
+.sideAccent{
     background: #007bff;
     width: 15px;
-    }
-  
-    .imageContainer{
-      padding: 50px;
-    }
-  
-    .imageContainer img{
-      width: 100%;
-    }
+}
 
-    .active-cyan-2 input[type=text]:focus:not([readonly]) {
-        border-bottom: 1px solid #4dd0e1;
-        box-shadow: 0 1px 0 0 #4dd0e1;
-        margin-left: auto;
-      }
+.imageContainer{
+    padding: 50px;
+}
 
-    .active-cyan .fa, .active-cyan-2 .fa {
-        color: #4dd0e1;
-      }
+.imageContainer img{
+    width: 100%;
+}
 
-      #nav-list{
-        margin-right: 0 !important;
-      }
-    .form-inline{
-      margin-right: 0!important;
-      margin-left: auto;
-   }
+.active-cyan-2 input[type=text]:focus:not([readonly]) {
+    border-bottom: 1px solid #4dd0e1;
+    box-shadow: 0 1px 0 0 #4dd0e1;
+    margin-left: auto;
+ }
+
+.active-cyan .fa, .active-cyan-2 .fa {
+    color: #4dd0e1;
+}
+
+#nav-list{
+    margin-right: 0 !important;
+}
+
+.form-inline{
+    margin-right: 0!important;
+    margin-left: auto;
+}
+
+
+/* Breadcrumb navigation */
+
+
+
 
 /* Bakery categories navigation */
 
@@ -217,6 +233,7 @@ h1, h2, h3, h4, h5, h6{
 .bakeryNav h4 {
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 24px;
+    padding-top: 15px;
 }
 
  .bakeryNav .row {
