@@ -37,8 +37,7 @@ p {
       margin-right: 0!important;
       margin-left: auto;
    }
-   .view img{
-   }
+
 
 /* radio buttons */
 
@@ -224,37 +223,38 @@ select.list-dt:focus {
 }
 #progressbar li {
     list-style-type: none;
-    font-size: 12px;
+    font-size: 14px;
+    font-weight: bold;
     width: 13%;
     float: left;
     position: relative
 }
-#progressbar #account:before {
-    font-family: FontAwesome;
+#progressbar #cakeshape:before {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
     content: "1"
 }
-#progressbar #personal:before {
-    font-family: FontAwesome;
+#progressbar #cakesize:before {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
     content: "2"
 }
-#progressbar #payment:before {
-    font-family: FontAwesome;
+#progressbar #cakeflavor:before {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
     content: "3"
 }
-#progressbar #Icing:before {
-    font-family: FontAwesome;
+#progressbar #cakeicing:before {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
     content: "3"
 }
-#progressbar #message:before {
-    font-family: FontAwesome;
+#progressbar #cakemessage:before {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
     content: "4"
 }
-#progressbar #notes:before {
-    font-family: FontAwesome;
+#progressbar #cakenotes:before {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
     content: "5"
 }
-#progressbar #confirm:before {
-    font-family: FontAwesome;
+#progressbar #cakereview:before {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
     content: "\f00c"
 }
 #progressbar li:before {

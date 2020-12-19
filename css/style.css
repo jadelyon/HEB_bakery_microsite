@@ -5,6 +5,9 @@
     width: 100%;
     background-size: cover;
     z-index: 10;
+    background-color: #2C698B !important;
+    border-top: 2px dashed white;
+    border-bottom: 2px dashed white; 
 }
 
 .navbar-nav{
@@ -21,16 +24,16 @@
 }
 
 .customNav a {
-    color: black!important;
+    color: white!important;
 }
 .active-cyan-2 input[type=text]:focus:not([readonly]) {
-    border-bottom: 1px solid #4dd0e1;
-    box-shadow: 0 1px 0 0 #4dd0e1;
+    border-bottom: 1px solid #2C698B;
+    box-shadow: 0 1px 0 0 #2C698B;
     margin-left: auto;
 }
 
 .active-cyan .fa, .active-cyan-2 .fa {
-    color: #4dd0e1;
+    color: #2C698B;
 }
 
 #nav-list{
@@ -42,8 +45,11 @@
     margin-left: auto;
 }
 
-hr.navLine {
-    border-top: 1px dashed black;
+
+div.outernav {
+    background-color: #2C698B !important;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 
@@ -319,7 +325,7 @@ hr.line {
 }
 
 
-/* horizontal scrollable menu */
+/* horizontal scrollable menus */
 
 .birthdayNav {
     margin-left: 3%;
@@ -341,6 +347,13 @@ div.scrollmenu {
 div.scrollmenu li {
     display: inline-block;
     float: none;
+}
+
+#cakeselection {
+    width: 300px;
+    height: 200px;
+    margin: 5px;
+    background-color: lightgrey;
 }
 
 
@@ -415,8 +428,71 @@ div.scrollmenu li {
 
 /* checkout process */
 
-.pickup h2 {
+.checkoutpage1 h2 {
     text-align: center;
     margin-top: 3%;
     margin-bottom: 3%;
+    font-family: 'Lora', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 42px;
+    text-decoration: none;
+}
+
+#progressbar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    color: lightgrey
+}
+#progressbar .active {
+    color: #000000
+}
+#progressbar li {
+    list-style-type: none;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    width: 30%;
+    float: left;
+    position: relative
+}
+#progressbar #checkoutpickup:before {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    content: "1"
+}
+#progressbar #checkoutpayment:before {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    content: "2"
+}
+#progressbar #checkoutreview:before {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    content: "3"
+}
+
+#progressbar li:before {
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    display: block;
+    font-size: 18px;
+    color: #FFFFFF;
+    background: lightgray;
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+    padding: 2px
+}
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: lightgray;
+    position: absolute;
+    left: 0;
+    top: 25px;
+    z-index: -1
+}
+#progressbar li.active:before,
+#progressbar li.active:after {
+    background: red
 }

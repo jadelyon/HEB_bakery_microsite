@@ -43,7 +43,16 @@ margin: 0px 15px;
 }
 
 
-/* hero image sections */
+/* titles and headers */
+
+.container h2 {
+  text-align: center;
+  margin-top: 3%;
+  font-family: 'Lora', 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 42px;
+  text-decoration: none;
+}
+
 @media only screen and (max-width: 768px) {
  
 /* Force table to not be like tables anymore */
