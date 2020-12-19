@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/customization.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>HEB Bakery</title>
+</head>
+<body>
+
+    <!-- This is the header navigation -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light customNav">
+        <a class="navbar-brand" href="#"><img src="images/Logo_of_the_HEB_Grocery_Company,_LP.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <form class="form-inline active-cyan-4">
+                <input class="form-control form-control-sm mr-3 w-200" type="text" placeholder="Search"
+                  aria-label="Search">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+            </form>
+          <ul id='nav-list' class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Login or Register <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Find a Store</a>
+              </li>
+             <i class="fa fa-shopping-cart" style="font-size:30px;color:red"></i>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+<!-- stepper & customization -->
+
+<div class="row">
+    <div class="col-md-12 mx-0">
+        <form id="msform">
+            
+            <!-- progressbar -->
+            <ul id="progressbar">
+                <li class="active" id="account"><strong>Shape</strong></li>
+                <li id="personal"><strong>Size</strong></li>
+                <li id="payment"><strong>Flavor</strong></li>
+                <li id="icing"> <strong>Icing</strong></li>
+                <li id="Message`"><strong>Message</strong></li>
+                <li id="Notes"><strong>Notes</strong></li>
+                <li id="confirm"><strong>Review</strong></li>
+            </ul> 
+            <!-- fieldsets -->
+            <fieldset>
+                <section class="section pt-2">
+                    
+                <!-- Grid row -->
+                    <div class="row">
+                <!--Grid column-->
+                <div class="col-lg-8 col-md-12 pb-lg-5 mb-4">
+                <!--Image -->
+                    <div class="view zoom z-depth-1">
+                        <img src="Images/round_cake.jpeg" class="img-fluid" alt="sample image">
+                        <div class="mask rgba-white-light">
+                        </div>                    
+                     </div>
+                </div>
+                <!--Grid column-->
+                        <div class="col-lg-4 col-md-12 mb-4">
+                <!-- Section: Categories -->
+                            <section class="section">
+                  <fieldset>
+                    <div class="container mt-3">
+                        <h2>Cake Shape</h2> 
+                    <label for="round-cake">
+                      <input type="radio" value="round-cake" name="quality" id="round-cake"> <span>Round Cake</span>
+                    </label>
+                  <br>
+                    <label for="squared-cake">
+                      <input type="radio" value="squared-cake" name="quality" id="squared-cake"> <span>Squared Cake</span>
+                    </label>
+                    <br>
+                       <label for="sheet-cake">
+                      <input type="radio" value="sheet-cake"  name="quality" id="sheet-cake" checked> <span>Sheet Cake</span>
+                    </label>
+                </div>
+                  </fieldset>
+            <fieldset>
+                <div class="form-card">
+                    <h2 class="fs-title">Personal Information</h2> <input type="text" name="fname" placeholder="First Name" /> <input type="text" name="lname" placeholder="Last Name" /> <input type="text" name="phno" placeholder="Contact No." /> <input type="text" name="phno_2" placeholder="Alternate Contact No." />
+                </div> <input type="button" name="previous" class="previous action-button-previous" value="Previous" /> <input type="button" name="next" class="next action-button" value="Next Step" />
+            </fieldset>
+            <fieldset>
+                <div class="form-card">
+                    <h2 class="fs-title">Payment Information</h2>
+                    <div class="radio-group">
+                        <div class='radio' data-value="credit"><img src="https://i.imgur.com/XzOzVHZ.jpg" width="200px" height="100px"></div>
+                        <div class='radio' data-value="paypal"><img src="https://i.imgur.com/jXjwZlj.jpg" width="200px" height="100px"></div> <br>
+                    </div> <label class="pay">Card Holder Name*</label> <input type="text" name="holdername" placeholder="" />
+                    <div class="row">
+                        <div class="col-9"> <label class="pay">Card Number*</label> <input type="text" name="cardno" placeholder="" /> </div>
+                        <div class="col-3"> <label class="pay">CVC*</label> <input type="password" name="cvcpwd" placeholder="***" /> </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3"> <label class="pay">Expiry Date*</label> </div>
+                        <div class="col-9"> <select class="list-dt" id="month" name="expmonth">
+                                <option selected>Month</option>
+                                <option>January</option>
+                                <option>February</option>
+                                <option>March</option>
+                                <option>April</option>
+                                <option>May</option>
+                                <option>June</option>
+                                <option>July</option>
+                                <option>August</option>
+                                <option>September</option>
+                                <option>October</option>
+                                <option>November</option>
+                                <option>December</option>
+                            </select> <select class="list-dt" id="year" name="expyear">
+                                <option selected>Year</option>
+                            </select> </div>
+                    </div>
+                </div> <input type="button" name="previous" class="previous action-button-previous" value="Previous" /> <input type="button" name="make_payment" class="next action-button" value="Confirm" />
+            </fieldset>
+            <fieldset>
+                <div class="form-card">
+                    <h2 class="fs-title text-center">Success !</h2> <br><br>
+                    <div class="row justify-content-center">
+                        <div class="col-3"> <img src="https://img.icons8.com/color/96/000000/ok--v2.png" class="fit-image"> </div>
+                    </div> <br><br>
+                    <div class="row justify-content-center">
+                        <div class="col-7 text-center">
+                            <h5>You Have Successfully Signed Up</h5>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div>
+
+<!-- This is the footer navigation  -->
+</body>
+<script src="customize.js"></script>
+</html>

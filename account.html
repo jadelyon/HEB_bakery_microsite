@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>HEB Bakery</title>
+</head>
+<body>
+
+<!-- Navigation bar -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light customNav">
+        <a class="navbar-brand" href="#"><img src="images/Logo_of_the_HEB_Grocery_Company,_LP.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <form class="form-inline active-cyan-4">
+                <input class="form-control form-control-sm mr-3 w-200" type="text" placeholder="Search"
+                  aria-label="Search">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+            </form>
+          <ul id='nav-list' class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home Page <span class="sr-only">(current)</span></a>
+              </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="account.html">Login or Register <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Find a Store</a>
+              </li>
+            </li>
+            <a href="cart.html">
+            <i class="fa fa-shopping-cart" style="font-size:30px;color:red"></i></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+<!-- Sign in or create an account  -->
+
+<section class="account">
+  <div class="container account">
+      <div class="row">
+          <div class="guest col">
+              <h4>Continue as a guest</h4> 
+              <p>You can create an account during checkout</p>
+              <button>Guest Checkout</button>      
+            <hr class="line2">
+              <h4>Create an account</h4>
+              <p>Your account gives you access to digital coupons, shopping lists, recipes, and more.</p>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#createAccount">Create an Account</button>
+          </div>
+          <div class="line3"></div>
+          <div class="signin col">
+              <h4>Already have an account?</h4><br>
+              <form>
+                  <input type="text" class="inputBox" id="email" name="email" placeholder="Email Address*"><br>
+                  <input type="text" class="inputBox" id="password" name="password" placeholder="Password*"><br><br>
+                  <input type="submit" class="submit" value="Sign In">
+              </form><br>
+              <div class="forgotPW">
+                  <a href="#">Forgot Password</a>
+              </div>
+              <div class="remember">
+                <form>
+                  <input type="checkbox" id="rememberMe" name="rememberMe">
+                  <label for="rememberMe">Remember Me</label>
+                </form>
+              </div>
+          </div>
+        </div>
+  </div>
+</section>
+
+<!-- Modal -->
+
+<div class="modal fade" id="createAccount" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+    <div class="modal-header">
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <h4>Create an Account</h4>
+        <form>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <input type="text" class="form-control" id="inputFirstname" placeholder="First Name *">
+              </div>
+              <div class="form-group col-md-6">
+                <input type="text" class="form-control" id="inputLastname" placeholder="Last Name *">
+              </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                  <input type="email" class="form-control" id="inputEmail" placeholder="Email *">
+                </div>
+                <div class="form-group col-md-6">
+                  <input type="email" class="form-control" id="inputEmail" placeholder="Confirm Email *">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <input type="password" class="form-control" id="inputPassword" placeholder="Password *">
+                </div>
+                <div class="form-group col-md-6">
+                  <input type="password" class="form-control" id="inputPassword" placeholder="Confirm Password *">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <input type="number" class="form-control" id="inputPhonenumber" placeholder="Phone Number">
+                </div>
+                <div class="form-group col-md-6">
+                  <input type="number" class="form-control" id="inputZipcode" placeholder="Zip Code">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck">
+                  <label class="form-check-label" for="gridCheck">
+                    Get email alerts about new promotions, exclusive offers, in-store events, and other ways you can save at HEB.
+                  </label>
+                </div>
+              </div>
+            <h4>Security Questions</h4>
+              <div class="form-row">
+              <div class="form-group col-md-6">
+                <select id="questions" class="form-control">
+                  <option selected>Question 1 *</option>
+                  <option>option 1</option>
+                  <option>option 2</option>
+                  <option>option 3</option>
+                </select>
+              </div>
+              <div class="form-group col-md-6">
+                  <input type="text" class="form-control" id="questionAnswers" placeholder="Your Answer">
+              </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                  <select id="questions" class="form-control">
+                    <option selected>Question 2 *</option>
+                    <option>option 1</option>
+                    <option>option 2</option>
+                    <option>option 3</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-6">
+                    <input type="text" class="form-control" id="questionAnswers" placeholder="Your Answer">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <select id="questions" class="form-control">
+                    <option selected>Question 3 *</option>
+                    <option>option 1</option>
+                    <option>option 2</option>
+                    <option>option 3</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-6">
+                    <input type="text" class="form-control" id="questionAnswers" placeholder="Your Answer">
+                </div>
+              </div>
+          </form>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary">Create an Account</button>
+    </div>
+    </div>
+</div>
+</div>
+
+
+<script src="js/index.js"></script>
+
+</body>
+</html>
