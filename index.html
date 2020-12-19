@@ -11,47 +11,51 @@
 <body>
 
 <!-- Navigation bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light customNav">
-        <a class="navbar-brand" href="#"><img src="images/Logo_of_the_HEB_Grocery_Company,_LP.png"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <form class="form-inline active-cyan-4">
-                <input class="form-control form-control-sm mr-3 w-200" type="text" placeholder="Search"
-                  aria-label="Search">
-                  <i class="fa fa-search" aria-hidden="true"></i>
-            </form>
-          <ul id='nav-list' class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Login or Register <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Find a Store</a>
-              </li>
-             <i class="fa fa-shopping-cart" style="font-size:30px;color:red"></i>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </nav>
 
-<!-- End navigation bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light customNav">
+    <a class="navbar-brand" href="#"><img src="images/Logo_of_the_HEB_Grocery_Company,_LP.png"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <form class="form-inline active-cyan-4">
+            <input class="form-control form-control-sm mr-3 w-200" type="text" placeholder="Search"
+              aria-label="Search">
+              <i class="fa fa-search" aria-hidden="true"></i>
+        </form>
+      <ul id='nav-list' class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Login or Register <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Find a Store</a>
+          </li>
+          <i class="fa fa-shopping-cart" style="font-size:30px;color:red"></i>
+        </li>
+      </ul>
+    </div>
+</nav>
 
+<!-- Breadcrumb navigation -->
+
+<ul class="breadcrumb">
+  <li><a href="index.html">Bakery Home</a></li>
+</ul>
+
+  
 <!-- Jumbotron -->
 
-      <div class="jumbotron rockBackground">
-        <div class="jumboCopy">
-          <h1 class="display-4">HEB Bakery</h1>
-          <p class="lead">Find freshly-baked artisan bread, tortillas, custom cakes, theme cakes, cookies & more at your local H-E-B Bakery</p>
-          <hr class="my-4">
-        </div>
-      </div>
+<div class="jumbotron">
+  <div class="jumboCopy">
+    <h1 class="display-4">HEB Bakery</h1>
+    <p class="lead">Find freshly-baked artisan bread, tortillas, custom cakes, theme cakes, cookies & more at your local H-E-B Bakery</p>
+  </div>
+</div>
 
-<!-- End jumbotron -->
 
-<!-- This is the bakery categories navigation  -->
+<!-- Bakery categories navigation  -->
 
+<hr class="line">
 <section class="bakeryNav">
   <h2>What are you shopping for?</h2>
   <div class="container">
@@ -61,8 +65,10 @@
               <h4>Bread</h4>       
           </div>
           <div class="cakes col">
-              <img src="Images/cake.jpg">
-              <h4>Cakes</h4>
+              <a href="cakes.html">
+                <img src="Images/cake.jpg">
+                <h4>Cakes</h4>
+              </a>
           </div>
           <div class="cookies col">
               <img src="Images/cookies.jpg">
@@ -86,7 +92,6 @@
   </div>
 </section>
 
-<!--End bakery categories navigation-->
 
 <!-- This is the footer navigation  -->
 

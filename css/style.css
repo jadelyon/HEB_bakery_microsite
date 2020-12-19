@@ -1,9 +1,5 @@
 /* header navigation */
 
-p { 
-    font-family: 'Jura', sans-serif;
-}
-
 .customNav {
     position: fixed;
     width: 100%;
@@ -46,10 +42,12 @@ p {
     margin-left: auto;
 }
 
-/* footer navigation */
+hr.navLine {
+    border-top: 1px dashed black;
+}
 
 
-/* hero image sections */
+/* homepage hero image */
 
 .jumbotron{
     background-image: url('../images/bakery-hero.jpg');
@@ -72,16 +70,12 @@ p {
     padding:50px;
 }
 
-
-/* bakery categories navigation */
-
-
 h1, h2, h3, h4, h5, h6{
-    font-family: 'Anton', sans-serif;
+    font-family: 'Lora', 'Open Sans', 'Helvetica Neue', sans-serif;
 }
   
 p { 
-    font-family: 'Jura', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .customNav {
@@ -129,7 +123,7 @@ p {
     background-size: cover;
     background-repeat: no-repeat;
     height: 500px;
-    height: calc(100vh - 25px);
+    height: calc(42vh - 25px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -142,6 +136,13 @@ p {
     color: white;
     text-align: center;
 }
+
+div.jumboCopy {
+    padding: 30px;
+    background-color: black;
+    opacity: 0.75;
+}
+
 .content{
     padding:50px;
 }
@@ -208,34 +209,136 @@ footer {
     margin-left: auto;
 }
 
+/* happy holidays hero image */
+
+div.holidayHero{
+    background-image: url("../Images/happyholidays.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    height: 500px;
+    height: calc(45vh - 25px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 3px 3px lightgrey;
+    margin-bottom: 3%;
+}
+
+.holidayCopy{
+    width: 70%;
+    min-width: 500px;
+    max-width: 700px;
+    text-align: center;
+    color: white;
+}
+
+.holidayCopy h1 {
+    font-family: 'Lora', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 50px;
+    text-decoration: none;
+}
+
+.holidayCopy p {
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+}
+
+.holidayCopy button {
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+}
+
+div.holidayCopy {
+    padding: 30px;
+    background-color: black;
+    opacity: 0.8;
+}
+
 
 /* Breadcrumb navigation */
 
+ul.breadcrumb li {
+    display: inline;
+}
+
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: grey;
+    content: "/\00a0"
+}
+
+ul.breadcrumb {
+    background-color: white;
+}
 
 
 
 /* Bakery categories navigation */
 
+hr.line {
+    border-top: 1px dashed lightgrey;
+}
+
 .bakeryNav {
     text-align: center;
 }
 .bakeryNav img {
-    border: 3px solid #ff0000;
+    border: 1px solid lightgrey;
     border-radius: 50%;
     width: 125px;
-    padding: 15px;
+    padding: 12px;
+    box-shadow: 3px 3px 3px lightgrey;
 }
 .bakeryNav h2 {
     font-family: 'Lora', 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 50px;
+    font-size: 42px;
+    text-decoration: none;
     padding-bottom: 25px;
 }
 .bakeryNav h4 {
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 24px;
+    text-decoration: none;
     padding-top: 15px;
 }
 
  .bakeryNav .row {
-     padding-bottom: 50px;
+     padding-bottom: 30px;
+}
+
+.bakeryNav a:link {
+    text-decoration: none;
+}
+
+
+/* horizontal scrollable menu */
+
+.birthdayNav {
+    margin-left: 3%;
+    margin-top: 3%;
+}
+
+.cakeOptions {
+    width: 300px;
+    height: 200px;
+    margin: 5px;
+    background-color: grey;
+}
+
+div.scrollmenu {
+    overflow: auto;
+    white-space: nowrap;
+}
+
+div.scrollmenu li {
+    display: inline-block;
+    float: none;
 }
