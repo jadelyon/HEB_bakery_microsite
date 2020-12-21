@@ -41,27 +41,146 @@
         </div>
       </nav>
 
+<!-- Checkout Page 1 -->
+
+      <!-- left column progress bar and pick up settings -->
+
 <section class="checkoutpage1">
     <h2>Checkout</h2>
     <div class="container">
       <div class="row">
-        <div class="col-6">
+
+        <div class="col-7">
           <div id="progress">
-            <!--progress bar-->
             <ul id="progressbar">
               <li class="active" id="checkoutpickup">Pick Up</li>
               <li id="checkoutpayment">Payment</li>
               <li id="checkoutreview">Review</li>
           </ul> 
           </div><br>
-          
+          <div>
+          <h5>Schedule your pick up and location:</h5>
+          <div class="row justify-content-md-center pickupsetting" id="pickuptype">
+            <div class="col">
+              <input type="radio" id="curbside" name="pickup" value="curbside">
+              <label for="curbside">Curbside Pick Up</label>
+            </div>
+            <div class="col">
+              <input type="radio" id="instore" name="pickup" value="instore">
+              <label for="instore">In-Store Pick Up</label>
+            </div>
+            <div class="col">
+              <input type="radio" id="delivery" name="pickup" value="delivery">
+              <label for="delivery">Delivery</label>
+            </div>
+          </div>
+          </div>
+
+          <div class="container pickupdropdowns">
+          <div class="row justify-content-md-center" id="schedulepickup">
+          <div class="col pickupsetting" id="pickuplocation">
+            <select id="selectlocation">
+              <option value="0">-- Select a location --</option>
+              <option value="1">Hancock Center H-E-B (1.20 miles)</option>
+              <option value="2">Mueller H-E-B (2.42 miles)</option>
+              <option value="3">Burnet Rd H-E-B (2.72 miles)</option>
+              <option value="4">7th Street H-E-B (2.84 miles)</option>
+              <option value="5">South Congress H-E-B (3.94 miles)</option>
+              <option value="6">Riverside H-E-B plus! (4.15  miles)</option>
+            </select>
+          </div>
+
+          <div class="col pickupsetting" id="pickuptimes">
+            <select id="scheduletime">
+              <option value="select">-- Select a timeslot --</option>
+              <option value="am1">8:00AM - 8:30AM</option>
+              <option value="am2">9:00AM - 9:30AM</option>
+              <option value="am3">10:00AM - 10:30AM</option>
+              <option value="am4">12:00PM - 12:30PM</option>
+              <option value="pm1">2:00PM - 2:30PM</option>
+              <option value="pm2">3:30PM - 4:00PM</option>
+              <option value="pm3">4:30PM - 5:00PM</option>
+              <option value="pm4">8:00PM - 8:30PM</option>
+            </select>
+          </div>
+          </div>
+          </div>
+
+         <div class="ordersummarycard"> 
+          <div class="row">
+            <div class="col summaryimg">
+              <img src="Images/birthday.jpg">
+            </div>
+            <div class="col">
+              <p><strong>Birthday Cake - Coco Theme</strong>
+              <p><i>Customized</i><br>
+              <a href="#">View Details</a><br></p>
+              <!-- add qty radio here -->
+              <strong>$25.93</strong>
+            </div>
+          </div>
         </div>
-        <div class="col-4 summary">
-          <h5>Order Summary</h5>
-          <p></p>
         </div>
-      </div>
-    </div>
+
+        <!-- right column order summary -->
+
+        <div class="col-5">
+          <div class="container summary">
+          <h5>Order Summary</h5><br>
+          <div class="row ordersummary">
+            <div class="col ordersummaryitems">
+              <p>Birthday Cake - Coco Theme</p>
+            </div>
+            <div class="col-md-auto ordersummaryprice">
+              <strong>$25.93</strong>
+            </div>
+          </div><br>
+            <form>
+                <div><label for="promocode"><i>Promo Code / Gift Card</i></label></div>
+                <div class="form-group mb-2">
+                  <input type="text" class="promoinput mb-2" id="promocode" aria-describedby="promohelp" placeholder="Enter 14-Digit Code"> 
+                  <button type="submit" class="btn btn-primary mb-2">Apply</button>
+                </div>
+            </form>
+
+          <br><div class="row summarytotal">
+            <div class="col summarysubtotal">
+              <p>Subtotal</p>
+            </div>
+            <div class="col-md-auto summaryamount">
+              $25.93
+            </div>
+          </div>
+          <div class="row summarytotal">
+            <div class="col summarysubtotal">
+              <p>Tax</p>
+            </div>
+            <div class="col-md-auto summaryamount">
+              $2.07
+            </div>
+          </div>
+          <div class="row summarytotal">
+            <div class="col summarysubtotal">
+              <p>Personal Shopper Fee</p>
+            </div>
+            <div class="col-md-auto summaryamount">
+              $5.00
+            </div>
+          </div>
+          <div class="row summarytotal">
+            <div class="col summarysubtotal">
+              <p>Total</p>
+            </div>
+            <div class="col-md-auto summarytotal">
+              <strong>$33.00</strong>
+            </div>
+          </div>
+          </div>
+        </div>
+            
+          </div>
+        </div>
+
 </section>
 
 

@@ -50,13 +50,17 @@
           <div class="guest col">
               <h4>Continue as a guest</h4> 
               <p>You can create an account during checkout</p>
-              <button>Guest Checkout</button>      
+              <a href="checkout.html"><button>Guest Checkout</button></a>      
             <hr class="line2">
               <h4>Create an account</h4>
               <p>Your account gives you access to digital coupons, shopping lists, recipes, and more.</p>
-              <!-- Button trigger modal -->
+    
+    <!-- Button trigger modal -->
+
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#createAccount">Create an Account</button>
-              <!-- Modal -->
+              
+            
+    <!-- Modal -->
 
     <div class="modal fade" id="createAccount" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -160,12 +164,16 @@
     </div>
     </div>
           </div>
-          <div class="line3"></div>
+
+
+      <!-- Already have an account user sign in -->
+
+        <div class="line3"></div>
           <div class="signin col">
               <h4>Already have an account?</h4><br>
               <form>
-                  <input type="text" class="inputBox" id="email" name="email" placeholder="Email Address*"><br>
-                  <input type="text" class="inputBox" id="password" name="password" placeholder="Password*"><br><br>
+                  <input type="email" class="inputBox" id="email" name="email" placeholder="Email Address*"><br>
+                  <input type="password" class="inputBox" id="password" name="password" placeholder="Password*"><br><br>
                   <input type="submit" class="submit" value="Sign In">
               </form><br>
               <div class="forgotPW">

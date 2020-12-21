@@ -496,3 +496,52 @@ div.scrollmenu li {
 #progressbar li.active:after {
     background: red
 }
+
+
+#pickuplocation select {
+    width: 300px;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+}
+
+#pickuptimes select {
+    width: 200px;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+}
+
+div.pickupsetting {
+    padding: 5px;
+}
+
+
+div.ordersummarycard {
+    background: whitesmoke;
+    box-shadow: 3px 3px 3px lightgrey;
+    border: lightgrey;
+    border-radius: 10px;
+    margin-top: 3%;
+    max-width: 90%;
+    padding: 25px;
+}
+
+.summaryimg img {
+    width: 150px;
+    position: relative;
+    border: lightgrey;
+    z-index: 1;
+
+}
+
+div.summary {
+    background: whitesmoke;
+    box-shadow: 3px 3px 3px lightgrey;
+    border: lightgrey;
+    border-radius: 10px;
+    margin-top: 3%;
+    padding: 25px;
+}
+
+.summarytotal {
+    font-size: 14px;
+}
