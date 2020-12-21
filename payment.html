@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>HEB Bakery - Payment Details</title>
+</head>
+<body>
+
+<!-- Navigation bar -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light customNav">
+        <a class="navbar-brand" href="#"><img src="images/Logo_of_the_HEB_Grocery_Company,_LP.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <form class="form-inline active-cyan-4">
+                <input class="form-control form-control-sm mr-3 w-200" type="text" placeholder="Search"
+                  aria-label="Search">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+            </form>
+          <ul id='nav-list' class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home Page <span class="sr-only">(current)</span></a>
+              </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="account.html">Login or Register <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Find a Store</a>
+              </li>
+            </li>
+            <a href="cart.html">
+            <i class="fa fa-shopping-cart" style="font-size:30px;color:red"></i></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+<!-- Checkout page 2  -->
+
+      <!-- left column progress bar and payment details -->
+
+      <section class="checkoutpage2">
+        <h2>Payment Details</h2>
+        <div class="container">
+          <div class="row">
+    
+            <div class="col-7">
+              <div id="progress">
+                <ul id="progressbar">
+                  <li class="active" id="checkoutpickup">Pick Up</li>
+                  <li class="active" id="checkoutpayment">Payment</li>
+                  <li id="checkoutreview">Review</li>
+              </ul> 
+              </div><br>
+              <div class="container">
+              <h5>Payment type:</h5>
+              <div class="row justify-content-md-center payments" id="paymenttype">
+                <div class="col">
+                  <input type="radio" id="paymenttype" name="payment" value="credit">
+                  <label for="credit">Credit Card</label>
+                </div>
+                <div class="col">
+                  <input type="radio" id="paymenttype" name="payment" value="echeck">
+                  <label for="echeck">Electronic Check</label>
+                </div>
+                <div class="col">
+                  <input type="radio" id="paymenttype" name="payment" value="ebt">
+                  <label for="ebt">EBT</label>
+                </div>
+              </div>
+              </div>
+              <div class="container paymentdetails">
+                <form>
+                    <div class="form-group">
+                        <label for="inputname">Name on Card</label>
+                        <input type="text" class="form-control" id="inputname">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputcardnumber">Card Number</label>
+                        <input type="number" class="form-control" id="inputcardnumber">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-3">
+                            <label for="inputexpiration">Expiration Date</label>
+                            <input type="text" class="form-control" id="inputexpiration">
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="inputcvv">CVV</label>
+                            <input type="text" class="form-control" id="inputcvv">
+                        </div>
+                    </div>
+                    <dv class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="savecard">
+                            <label class="form-check-label" for="savecard">
+                                Save card for future purchases
+                            </label>
+                        </div>
+                    </dv>
+                </form>
+              </div>
+    
+
+    
+            </div>
+    
+            <!-- right column order summary -->
+    
+            <div class="col-5">
+              <div class="container summary">
+              <h5>Order Summary</h5><br>
+              <div class="row ordersummary">
+                <div class="col ordersummaryitems">
+                  <p>Birthday Cake - Coco Theme</p>
+                </div>
+                <div class="col-md-auto ordersummaryprice">
+                  <strong>$25.93</strong>
+                </div>
+              </div><br>
+                <form>
+                    <div><label for="promocode"><i>Promo Code / Gift Card</i></label></div>
+                    <div class="form-group mb-2">
+                      <input type="text" class="promoinput mb-2" id="promocode" aria-describedby="promohelp" placeholder="Enter 14-Digit Code"> 
+                      <button type="submit" class="btn btn-primary mb-2">Apply</button>
+                    </div>
+                </form>
+    
+              <br><div class="row summarytotal">
+                <div class="col summarysubtotal">
+                  <p>Subtotal</p>
+                </div>
+                <div class="col-md-auto summaryamount">
+                  $25.93
+                </div>
+              </div>
+              <div class="row summarytotal">
+                <div class="col summarysubtotal">
+                  <p>Tax</p>
+                </div>
+                <div class="col-md-auto summaryamount">
+                  $2.07
+                </div>
+              </div>
+              <div class="row summarytotal">
+                <div class="col summarysubtotal">
+                  <p>Personal Shopper Fee</p>
+                </div>
+                <div class="col-md-auto summaryamount">
+                  $5.00
+                </div>
+              </div>
+              <div class="row summarytotal">
+                <div class="col summarysubtotal">
+                  <p>Total</p>
+                </div>
+                <div class="col-md-auto summarytotal">
+                  <strong>$33.00</strong>
+                </div>
+              </div>
+              </div>
+
+              <br><br>
+              <div class="submitbuttons">
+                <a href="review.html"><button type="submit">Review Order</button></a>
+              </div>
+
+            </div>
+                
+              </div>
+            </div>
+    
+    </section>
+    
+    
+    
+    
+    
+    </body>
+    </html>

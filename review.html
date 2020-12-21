@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>HEB Bakery - Checkout</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>HEB Bakery - Review Order</title>
 </head>
 <body>
 
@@ -41,12 +41,12 @@
         </div>
       </nav>
 
-<!-- Checkout page 1 -->
+<!-- Checkout page 3 -->
 
-      <!-- left column progress bar and pick up settings -->
+      <!-- left column progress bar and review pickup settings and payment details -->
 
-<section class="checkoutpage1">
-    <h2>Checkout</h2>
+<section class="checkoutpage3">
+    <h2>Review Order</h2>
     <div class="container">
       <div class="row">
 
@@ -54,55 +54,19 @@
           <div id="progress">
             <ul id="progressbar">
               <li class="active" id="checkoutpickup">Pick Up</li>
-              <li id="checkoutpayment">Payment</li>
-              <li id="checkoutreview">Review</li>
+              <li class="active" id="checkoutpayment">Payment</li>
+              <li class="active" id="checkoutreview">Review</li>
           </ul> 
           </div><br>
           <div>
-          <h5>Schedule your pick up and location:</h5>
-          <div class="row justify-content-md-center pickupsetting" id="pickuptype">
-            <div class="col">
-              <input type="radio" id="curbside" name="pickup" value="curbside">
-              <label for="curbside">Curbside Pick Up</label>
-            </div>
-            <div class="col">
-              <input type="radio" id="instore" name="pickup" value="instore">
-              <label for="instore">In-Store Pick Up</label>
-            </div>
-            <div class="col">
-              <input type="radio" id="delivery" name="pickup" value="delivery">
-              <label for="delivery">Delivery</label>
-            </div>
-          </div>
+          <h5>Order details:</h5>
           </div>
 
-          <div class="container pickupdropdowns">
-          <div class="row justify-content-md-center" id="schedulepickup">
-          <div class="col pickupsetting" id="pickuplocation">
+          <div class="pickupdropdowns">
+          <div class="pickupsetting">
             <select id="selectlocation">
-              <option value="0">-- Select a location --</option>
-              <option value="1">Hancock Center H-E-B (1.20 miles)</option>
-              <option value="2">Mueller H-E-B (2.42 miles)</option>
-              <option value="3">Burnet Rd H-E-B (2.72 miles)</option>
-              <option value="4">7th Street H-E-B (2.84 miles)</option>
-              <option value="5">South Congress H-E-B (3.94 miles)</option>
-              <option value="6">Riverside H-E-B plus! (4.15  miles)</option>
+              <option value="0">Pick Up at <strong>Hancock Center H-E-B</strong> on <strong>Jan 9, 10:00AM - 10:30AM</strong></option>
             </select>
-          </div>
-
-          <div class="col pickupsetting" id="pickuptimes">
-            <select id="scheduletime">
-              <option value="select">-- Select a timeslot --</option>
-              <option value="am1">8:00AM - 8:30AM</option>
-              <option value="am2">9:00AM - 9:30AM</option>
-              <option value="am3">10:00AM - 10:30AM</option>
-              <option value="am4">12:00PM - 12:30PM</option>
-              <option value="pm1">2:00PM - 2:30PM</option>
-              <option value="pm2">3:30PM - 4:00PM</option>
-              <option value="pm3">4:30PM - 5:00PM</option>
-              <option value="pm4">8:00PM - 8:30PM</option>
-            </select>
-          </div>
           </div>
           </div>
 
@@ -120,6 +84,16 @@
             </div>
           </div>
         </div>
+        <br>
+
+        <div class="pickupdropdowns">
+            <div class="pickupsetting">
+              <select id="selectpaymentinfo">
+                <option value="0">Credit Card Information</option>
+              </select>
+            </div>
+            </div>
+
         </div>
 
         <!-- right column order summary -->
@@ -180,10 +154,34 @@
           <br><br>
           
           <div class="submitbuttons">
-            <a href="payment.html"><button type="submit">Continue to Payment</button></a>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#confirmorder">Confirm Order</button>
           </div>
+
+              <!-- Modal -->
+
+    <div class="modal fade" id="confirmorder" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h4>Order Confirmation</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>We have received your order and sent you a confirmation email.</p>
+            </div>
+            <div class="modal-footer">
+                <a href="index.html"><button type="button" class="btn btn-secondary" id="dismissconfirmation">Dismiss</button></a>
+            </div>
+            </div>
         </div>
-            
+        </div>
+        <!-- end modal -->
+
+        </div>
+        <!-- end right column -->
+        
           </div>
         </div>
 
@@ -194,4 +192,9 @@
 
 
 </body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </html>
