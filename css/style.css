@@ -45,26 +45,33 @@
     margin-left: auto;
 }
 
-
 div.outernav {
     background-color: #2C698B !important;
     padding-top: 5px;
     padding-bottom: 5px;
 }
 
+.fa-search {
+    color: white !important;
+}
+
 
 /* homepage hero image */
 
 .jumbotron{
-    background-image: url('../images/bakery-hero.jpg');
+    background-image: url('../images/bakery-hero2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
     height: 500px;
     height: calc(45vh - 25px);
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 3px 3px 3px lightgrey;
 }
+
 .jumboCopy{
     width: 70%;
     min-width: 500px;
@@ -72,12 +79,12 @@ div.outernav {
     color: white;
     text-align: center;
 }
-.content{
-    padding:50px;
-}
 
-h1, h2, h3, h4, h5, h6{
+
+.jumboCopy h1 {
     font-family: 'Lora', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 50px;
+    text-decoration: none;
 }
   
 p { 
@@ -116,16 +123,13 @@ p {
     background: black;
 }
 
-.customNav a {
-    color: black!important;
-}
 
 .navCTA{
     font-size: 15px;
 }
 
 .jumbotron{
-    background-image: url('../images/bakery-hero.jpg');
+    background-image: url('../images/bakery-hero2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 500px;
@@ -217,7 +221,7 @@ footer {
 
 /* happy holidays hero image */
 
-div.holidayHero{
+.holidayHero{
     background-image: url("../Images/happyholidays2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -305,7 +309,7 @@ hr.line {
 }
 .bakeryNav h2 {
     font-family: 'Lora', 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 42px;
+    font-size: 38px;
     text-decoration: none;
     padding-bottom: 25px;
 }
@@ -433,7 +437,7 @@ div.scrollmenu li {
     margin-top: 3%;
     margin-bottom: 3%;
     font-family: 'Lora', 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 42px;
+    font-size: 38px;
     text-decoration: none;
 }
 
@@ -442,7 +446,7 @@ div.scrollmenu li {
     margin-top: 3%;
     margin-bottom: 3%;
     font-family: 'Lora', 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 42px;
+    font-size: 38px;
     text-decoration: none;
 }
 
@@ -451,7 +455,7 @@ div.scrollmenu li {
     margin-top: 3%;
     margin-bottom: 3%;
     font-family: 'Lora', 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 42px;
+    font-size: 38px;
     text-decoration: none;
 }
 
@@ -572,7 +576,6 @@ div.summary {
     padding: 10px;
     width: 225px;
     text-align: center;
-    display: inline-block;
     font-size: 16px;
     float: right;
 }
